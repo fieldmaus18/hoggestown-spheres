@@ -6,8 +6,11 @@
     <title>Document</title>
     <style>
         * {
-            margin: 0;
-            padding: 7px;
+            padding: 5px;
+            margin: 0px;
+            padding-left: 60px;
+            padding-right: 60px;
+            margin: 0px;
             box-sizing: content-box;
         }
 
@@ -17,6 +20,14 @@
             text-align: center;
             margin-top: 10px;
             border: 1px solid black;
+        }
+
+        .heading {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 5px;
+            border-bottom: 1px solid black;
+            font-style: bold;
         }
 
         .flexbox-container {
@@ -34,6 +45,21 @@
             text-align: center;
 
         }
+
+        .flexbox-container2 {
+            display: flex;
+            gap:5px;
+            justify-content: center;
+            margin-bottom: 2px;
+            border-bottom: 1px solid black;
+        }
+
+        .flex-item2 {
+            color: black;
+            padding: 5px;
+            text-align: left;
+            flex: 1;
+        }
     </style>
 </head>
 <body>
@@ -43,7 +69,7 @@
             <a href="index.html">home</a>
         </div>
         <div class="flex-item1">
-            <a href="timeline.html">timeline of events</a>
+            <a href="timeline.html">timeline</a>
         </div>
         <div class="flex-item1">
             <a href="aftermath.html">aftermath/theories</a>
@@ -52,5 +78,29 @@
             <a href="contact.html">contact</a>
         </div>
     </div>
+    <br>
+    <br>
+    <div class="heading">
+        <b>Aftermath</b>
+    </div>
+    <br>
+    <div class="flexbox-container2">
+        <div class="flex-item2">
+            <b>Hoggestown Mystery Sphere Museum</b>
+            <br>
+            <p></p>Following the peak of the Hoggestown Sphere Phenomenon notoriety and public recognition, local Hoggestown pawnshop owner Leonard Coltranne plans the development of a museum and information center surrounding the phenomenon. Coltranne spent 1980-1991 gathering information and physical evidence collected for the museum, afterwards securing a building and putting up billboard advertising across Route 2.
+            <img src="museum-sign.jpg"style="width:400px">
+            <br>
+            A month after the 1993 Incident, the official <i>Hoggestown Mystery Spheres Local Museum & Gift Shop</i> opened its doors. Coltranne hoped the museum would gain state/nation-wide attraction from the mystery of the spheres by compiling evidence, witness testimony, photos, and videos of the cases spanning 30-some years. After its opening, the museum received few visitors aside from local Connecticut tourists, only bringing in a handful of national tourists a quarter. Shoddy management by Coltranne and his associates resulted in a dissolution of marketing funds, causing the museum to slip deeper into obscurity. The final unfortunate incident was an electrical fire in 1995, destroying the building and much of the physical evidence acquired by Coltranne. Unable to recover financially, the museum is forced to shut down.
+        </div>
+        <div class="flex-item2">
+            <img src="museum-shop.jpg"style="width:500px">
+            <br>
+            <p>The Hoggestown Mystery Spheres Museum & Gift Shop circa 1994</p>
+            
+            <!-- rearrange images -->
+        </div>
+    </div>
+    
 </body>
 </html>
