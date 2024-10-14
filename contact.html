@@ -6,27 +6,38 @@
     <title>Document</title>
     <style>
         * {
-            padding: 5px;
-            margin: 0px;
-            padding-left: 70px;
-            padding-right: 70px;
-            margin: 0px;
+            margin: 7px;
+            padding: 0;
             box-sizing: content-box;
+            padding-left: 50px;
+            padding-right: 50px;
+            background-color: rgb(179, 179, 179);
+            color: black;
+            text-align: center;
         }
 
         .title {
             color: rgb(255, 0, 0);
             font-size: 50px;
+            font-style: bold;
             text-align: center;
             margin-top: 10px;
             border: 1px solid black;
         }
 
         .heading {
+            font-size: 35px;
+            text-align: center;
+            margin-top: 5px;
+            font-style: bold;
+            color: yellow;
+        }
+
+        .heading2 {
             font-size: 20px;
             text-align: center;
             margin-top: 5px;
-            border: 1px solid black;
+            border-top: 1px solid black;
             font-style: bold;
         }
 
@@ -35,6 +46,7 @@
             gap: 5px;
             justify-content: center;
             margin-bottom: 1px;
+            padding: 7px
         }
 
         .flex-item1 {
@@ -43,25 +55,55 @@
             flex: 1;
             padding: 1px;
             text-align: center;
+            
 
         }
+
+        body {
+            margin: 20px;
+        }
+
+        #output {
+            margin-top: 10px;
+            font-style: bold;
+        }
+
     </style>
 </head>
 <body>
     <div class="title">The Hoggestown Sphere Phenomenon</div>
     <div class="flexbox-container">
         <div class="flex-item1">
-            <a href="index.html">home</a>
+            <a href="index.html" style="color: blue">home</a>
         </div>
         <div class="flex-item1">
-            <a href="timeline.html">timeline</a>
+            <a href="timeline.html" style="color: blue">timeline</a>
         </div>
         <div class="flex-item1">
-            <a href="aftermath.html">aftermath/theories</a>
+            <a href="aftermath.html">style="color:blue"aftermath/theories</a>
         </div>
         <div class="flex-item1">
-            <a href="contact.html">contact</a>
+            <a href="contact.html"style="color:blue">contact</a>
         </div>
     </div>
 </body>
+<tr><marquee scrollamount="10" direction="left"><div class="heading">!!IMPORTANT!!</div></marquee></tr><br>
+If you or anyone you may know have ever come into contact with / have any personal experience or affiliate with the <i>Hoggestown S&phere Phenomenon</i> we ask that you would please share you're story! For convienenec and ease of use we ask that you use the chat box below to share your personal story with the owners of this site so that more information/personal a ccounts might be spread on the mystery of the <i>Hoggeston Sphere Phenomenon</i><br>
+<br>
+<h2>Submissions</h2>
+<input type="text" id="textBox" placeholder="Share your story...">
+<button onclick="displayText()">Submit</button>
+<div id="output"></div>
+<script>
+    function displayText() {
+        const textBox = document.getElementById('textBox');
+        const outputDiv = document.getElementById('output');
+        outputDiv.textContent = `Your story has been sent! Thank you for your contribution!`;
+        textBox.placeholder = 'Share your story...'
+    }
+</script>
+<p>If you or anyone ypu may know have ever been personally affected by the sphere or the subsequent <i> Hoggestown Sphere Phenomenon</i>, or would like to share any evidence or information relating to any previous cases, please contact the Tolland County Police Department <a href="error.html" style="color:blue">here</a></p>
+<br>
+<br>
+<div class="heading2"></div>
 </html>
