@@ -6,23 +6,30 @@
     <title>Document</title>
     <style>
         * {
-            margin: 7px;
-            padding: 0;
+            margin: 0px;
+            padding: 300px, 300px;
             box-sizing: content-box;
-            padding-left: 50px;
-            padding-right: 50px;
-            background-color: rgb(179, 179, 179);
-            color: black;
+        }
+
+        body {
+            color: white;
+            background-image: url(bg.jpg);
+            padding-left: 300px;
+            padding-right: 300px;
+            margin: 10px;
+            position: absolute;
             text-align: center;
         }
 
         .title {
             color: rgb(255, 0, 0);
+            background-color: blue;
             font-size: 50px;
-            font-style: bold;
             text-align: center;
             margin-top: 10px;
-            border: 1px solid black;
+            border: 1px solid white;
+            padding: 7px;
+            font-style: bold
         }
 
         .heading {
@@ -37,26 +44,61 @@
             font-size: 20px;
             text-align: center;
             margin-top: 5px;
-            border-top: 1px solid black;
+            border-bottom: 1px solid white;
             font-style: bold;
         }
 
         .flexbox-container {
             display: flex;
-            gap: 5px;
+            gap: 10px;
             justify-content: center;
-            margin-bottom: 1px;
-            padding: 7px
+            margin: 2px;
+            padding: 10px;
+            background-color: blue;
         }
 
         .flex-item1 {
-            color: black;
             font-style: bold;
             flex: 1;
             padding: 1px;
-            text-align: center;
-            
+            text-align: left;
+            color: red;
+        }
 
+        .flexbox-container2 {
+            display: flex;
+            gap:10px;
+            justify-content: center;
+            margin: 2px;
+            padding: 10px;
+            background-color: blue;
+        }
+
+        .flex-item2 {
+            padding: 2px;
+            text-align: left;
+            flex: 1;
+
+        }
+
+        #cursor {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: yellow;
+            border-radius: 50%;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+        }
+
+        .trace {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: yellow;
+            border-radius: 50%;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
         }
 
         body {
@@ -74,16 +116,17 @@
     <div class="title">The Hoggestown Sphere Phenomenon</div>
     <div class="flexbox-container">
         <div class="flex-item1">
-            <a href="index.html" style="color: blue">home</a>
+            <a href="index.html" style="color:red">home</a>
         </div>
         <div class="flex-item1">
-            <a href="timeline.html" style="color: blue">timeline</a>
+            <a href="timeline.html"style="color:red">timeline</a>
         </div>
         <div class="flex-item1">
-            <a href="aftermath.html">style="color:blue"aftermath/theories</a>
+            <a href="aftermath.html" style="color: white">style="color:red"aftermath/theories</a>
         </div>
+        <br>
         <div class="flex-item1">
-            <a href="contact.html"style="color:blue">contact</a>
+            <a href="contact.html"style="color:red">contact</a>
         </div>
     </div>
 </body>
@@ -98,11 +141,13 @@ If you or anyone you may know have ever come into contact with / have any person
     function displayText() {
         const textBox = document.getElementById('textBox');
         const outputDiv = document.getElementById('output');
-        outputDiv.textContent = `Your story has been sent! Thank you for your contribution!`;
+        outputDiv.textContent =`Your story has been sent! Thank you for your contribution!`;
         textBox.placeholder = 'Share your story...'
     }
 </script>
-<p>If you or anyone ypu may know have ever been personally affected by the sphere or the subsequent <i> Hoggestown Sphere Phenomenon</i>, or would like to share any evidence or information relating to any previous cases, please contact the Tolland County Police Department <a href="error.html" style="color:blue">here</a></p>
+<br>
+<br>
+<p>If you or anyone ypu may know have ever been personally affected by the sphere or the subsequent <i> Hoggestown Sphere Phenomenon</i>, or would like to share any evidence or information relating to any previous cases, please contact the Tolland County Police Department <a href="error.html" style="color:red">here</a></p>
 <br>
 <br>
 <div class="heading2"></div>

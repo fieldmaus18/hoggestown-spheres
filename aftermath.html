@@ -6,21 +6,28 @@
     <title>Document</title>
     <style>
         * {
-            margin: 7px;
-            padding: 0;
+            margin: 0px;
+            padding: 0px;
             box-sizing: content-box;
-            padding-left: 50px;
-            padding-right: 50px;
-            background-color: rgb(179, 179, 179);
-            color: black;
+        }
+
+        body {
+            color: white;
+            background-image: url(bg.jpg);
+            padding-left: 300px;
+            padding-right: 300px;
+            margin: 10px;
+            position: absolute;
+            text-align: center;
         }
 
         .title {
             color: rgb(255, 0, 0);
+            background-color: blue;
             font-size: 50px;
             text-align: center;
             margin-top: 10px;
-            border: 1px solid black;
+            border: 1px solid white;
             padding: 7px;
             font-style: bold
         }
@@ -29,54 +36,80 @@
             font-size: 20px;
             text-align: center;
             margin-top: 5px;
-            border-top: 1px solid black;
+            border-bottom: 1px solid white;
             font-style: bold;
         }
 
         .flexbox-container {
             display: flex;
-            gap: 5px;
+            gap: 10px;
             justify-content: center;
-            margin-bottom: 1px;
+            margin: 2px;
+            padding: 10px;
+            background-color: blue;
         }
 
         .flex-item1 {
-            color: black;
             font-style: bold;
             flex: 1;
             padding: 1px;
-            text-align: center;
-
+            text-align: left;
+            color: red;
         }
 
         .flexbox-container2 {
             display: flex;
-            gap:5px;
+            gap:10px;
             justify-content: center;
-            margin-bottom: 2px;
+            margin: 2px;
+            padding: 10px;
+            background-color: blue;
         }
 
         .flex-item2 {
-            color: black;
-            padding: 5px;
+            padding: 2px;
+            text-align: left;
             flex: 1;
+
         }
+
+        #cursor {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: yellow;
+            border-radius: 50%;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+        }
+
+        .trace {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: yellow;
+            border-radius: 50%;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+        }
+
     </style>
 </head>
 <body>
     <div class="title">The Hoggestown Sphere Phenomenon</div>
     <div class="flexbox-container">
         <div class="flex-item1">
-            <a href="index.html" style="color:blue">home</a>
+            <a href="index.html" style="color:red">home</a>
         </div>
         <div class="flex-item1">
-            <a href="timeline.html" style="color:blue">timeline</a>
+            <a href="timeline.html"style="color:red">timeline</a>
         </div>
         <div class="flex-item1">
-            <a href="aftermath.html">style="color:blue"aftermath/theories</a>
+            <a href="aftermath.html" style="color: white">style="color:red"aftermath/theories</a>
         </div>
+        <br>
         <div class="flex-item1">
-            <a href="contact.html" style="color:blue">contact</a>
+            <a href="contact.html"style="color:red">contact</a>
         </div>
     </div>
     <br>
@@ -85,16 +118,20 @@
         <b>Aftermath</b>
     </div>
     <br>
-    <b>Hoggestown Mystery Sphere Museum</b>
-            <br>
-            <p>Following the peak of the Hoggestown Sphere Phenomenon notoriety and public recognition, local Hoggestown pawnshop owner Leonard Coltranne plans the development of a museum and information center surrounding the phenomenon. Coltranne spent 1980-1991 gathering information and physical evidence collected for the museum, afterwards securing a building and putting up billboard advertising across Route 2.</p>
-            <p>A month after the 1993 Incident, the official <i>Hoggestown Mystery Spheres Local Museum & Gift Shop</i> opened its doors. Coltranne hoped the museum would gain state/nation-wide attraction from the mystery of the spheres by compiling evidence, witness testimony, photos, and videos of the cases spanning 30-some years. After its opening, the museum received few visitors aside from local Connecticut tourists, only bringing in a handful of national tourists a quarter. Shoddy management by Coltranne and his associates resulted in a dissolution of marketing funds, causing the museum to slip deeper into obscurity. The final unfortunate incident was an electrical fire in 1995, destroying the building and much of the physical evidence acquired by Coltranne. Unable to recover financially, the museum is forced to shut down.</p>
-    <div class="flexbox-container2">
+    <div class="flex-container2">
         <div class="flex-item2">
-            <img src="museum-shop.jpg"style="width:300px">
+            
+            <br>
+            
+            
+        </div>
+    </div>
+    <div class="flexbox-container2">
+        <div class="flex-item2"><b>Hoggestown Mystery Sphere Museum</b><p>Following teh peak of the Hoggestown Mhystery Sphere OPhenomenom noteriety and public recoghniztion, local Hoggestown pawnshop owner Leonard Coltranne decides to capitalize on it, and plans the devlopment of a museum and information center surrounding the phenomenon. Coltranne spent 1980-1991 gatehring information and physicakl evidence collected for the myseuym, afterwards securing a biuilding and putting up billboard advertising across Route 2.</p>
+            <img src="museum-shop.jpg"style="width:400px">
             <p style="font-size:12px">Hoggestown Mystery Spheres Museum facade (1994)</p>
         </div>
-        <div class="flex-item2">
+        <div class="flex-item2"><p>A m onth after the 1993 Incident, the official hoggestown Myserty Sphere Phenomonenm Local Museum & Gift Shop opens its doors. Coltranne hoped the museum would gaiun state/nation-wide attraction form the mystery of the spheres by compiling evvidence, witrness testimony, photos, and videos surroudning te cases spanning some 30 years. After itys opening, the museum received few visitors aside form local Conneticut tourists, onkly bringing in a handful of out-of-state viewers a quarter. Shoddy managemnt by Coltranne and his associates result in a dissolution  of marketing funds, cauysing the museum to slip deeper into obscurity. The final unfortunate incident was an electrical fire in 1995, detsorying the budiliung and much of te phsi8scfa; evidence acquired by Coltranne. Unable to recover financially, the musuem was foprced to shut down.</p>
             <img src="museum-sign.jpg"style="width:400px">
             <p style="font-size:12px">Hoggestown Mystery Spheres Museum billboard on Route 2 (1993)</p>
         </div>
@@ -103,15 +140,72 @@
     There have been many theories throughout the years of what the spheres actually are, what their purpose, or lack thereof, may be. Here is a summary of the most popular theories among Hoggestown residences and individuals interested in the phenomenon:
     <br>
     <br>
-<b>Cold War</b>
-<p>The very first case of a sphere appearing in Hoggestown occurred during the middle of the Cold War, where tensions between the United States and the Soviet Union were high, and a great concern among American citizens. Any unknown entity, especially one that could be classified as any type of technology, was treated with massive suspicion and concern over the safety and privacy of American citizens, fearful of Soviet communists listening and taking over their lives. However, this theory was widely debunked following the Cold War scare.</p>
-<b>US Military</b>
-<p>Following the cold war and increasing distrust of the US government, the public shifted to believing the spheres were a form of US government/military surveillance equipment. The military bases of Groton and New Haven, Connecticut were thought to have some involvement, though those two coastal towns are in completely different counties from Hoggestown, a completely landlocked area. The idea that the spheres were some sort of advanced government technology was also widely debunked, after multiple failed attempts to test the spheres for radio waves, magnetic activity, or any sort of vibrational feedback that might act as a form of communication.</p>
-<b>Alien</b>
-<p>The bizarreness and seemingly pointless purpose of the spheres led many to the conclusion that its purpose could not be defined by earthly technology, but rather as alien technology. This also served as an explanation for the strange phenomenon or symptoms that occurred in some people who had come into contact with the sphere, the strange malfunctions the spheres cause in photography and audio capturing devices, and the bizarre patterning and material makeup of the spheres themselves. Though many view this theory as ridiculous, it can't fully be denied that the spheres do not seem of Earth.</p>
-<b>Installation</b>
-<p>The theory that most skeptics believe is the idea that the spheres are some sort of art installation or project. However, this does not explain the unexplainable material make up of the sphere, which has stumped investigators and scientists alike, or the strange symptoms. No individual has stepped forward to claim responsibility in creating the sphere or starting the Hoggestown Sphere Phenomenon fervor.</p>
-<div class="heading"></div>
+    <div class="flexbox-container2">
+        <div class="flex-item2">
+        <b>Cold War</b>
+            <p>The very first cas eof a sphere appearing in Hoggestown occurred during the middl eof the Cold War (1947-1989), where tensions betwene teh United States and the Soviet Union were high, and a grea concern among Americancitizens. Any unkown entity, especialy ones that could be classified as a type of technology, were treated with great suspicion and conecrn over the safety and privacy of Amercans, fearful of teh Soveit communists listening in and taking over their lievs. However, this theory was widely debunked following the end of the Cold War scare and the dissolution of teh USSR in 1989.</p>
+            <br>
+        <b>US Military</b>
+            <p>Following teh Cold War tehsre was an increasign sense of distrust and unease of the US Goevrnmebt. The public shifted to believeing teh sphere were a form of US goevrn,emy/militray surveillance technology or equimet. The militray bases of Groton and New Haven, Coneticut wre ethough to have somne involvement, though, being coastal towns, they are in copelety difefrent counties from Hoggestown, a landlocked area. The idea that the spheres wuere some sort of advnaced governemnt techology was also widley debunked, after multiple failed attempts to test te spheres from radio waves, manetic activity, r any sortof vibratinal feedback that mifht act as a form of ccommuniaion.</p>
+            <br>
+        <b>Alien</b>
+            <p>The bizarreness and seemingl pointless purpose of the spheres led many to the conscluson that its purpose could not be defined by earthly technology, but rater alien technology. This alos erves as  an explanation for the strange phenomena and symptoms that occurred in some people who gad come into contact with te sphere the strange malfuntcions the spheres cause to photo and audio capturing equipment, and the baizarre patterning and materrial makeup of the spheres themsleves. Though mahy view this theory as being rdiculous, it can't fully be denied that the sheres do not seem of Earth.</p>
+            <br>
+        <b>Installation</b>
+            <p>The theory that most skeptics believe is the idea that the spheers are some sort of art installation or project. However, this does not exmplain the nexaplainable aterial make up of the sphere, whicb has stumped investigaters and scientists alike, or the strange sysmtopms. No indvidual has steppeed forward to clam repsonsibility in creating the sphere or starting teh <b>Hoggstonw Mystery Spere</b> fervor.</p>
+        </div>
+        </div>
+    </div>
     
+
+
+
+
+<div class="heading"></div>
+<div id="cursor"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let currentSpeed = 100;
+            let slowdownInterval= 60 * 1000;
+            let lastSlowdown = Date.now();
+
+            $(document).mousemove(function (event) {
+                const now = Date.now();
+
+                if (now - lastSlowdown > slowdownInterval) {
+                    currentSpeed *= 1.25;
+                    lastSlowdown = now;
+                }
+
+                $("#cursor").stop().animate(
+                    {
+                        left: event.pageX,
+                        top: event.pageY,
+                    },
+                    currentSpeed
+                );
+
+                let trace = $('<div class="trace"></div>').appendTo("body");
+
+                trace.css({
+                    left: event.pageX + "px",
+                    top: event.pageY + "px",
+                    opacity: 1,
+                });
+
+                trace.animate (
+                    {
+                        opacity: 0,
+                    },
+                    1000,
+                    function () {
+                        $(this).remove();
+                    }
+                );
+            });
+        });
+    </script>
 </body>
 </html>
